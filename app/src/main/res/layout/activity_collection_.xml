@@ -12,7 +12,7 @@
     tools:context="com.example.acar.learnmixer_assignment.Collection_Activity"
     android:orientation="vertical"
     android:weightSum="1"
-    android:id="@+id/">
+   >
 
 
     <FrameLayout
