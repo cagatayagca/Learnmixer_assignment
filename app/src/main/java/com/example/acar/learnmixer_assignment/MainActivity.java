@@ -1,12 +1,16 @@
 package com.example.acar.learnmixer_assignment;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +39,13 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void go_to(View view){
+
+        Intent intent;
+        intent = new Intent(this, Collection_Activity.class);
+        startActivity(intent);
+
     }
 }

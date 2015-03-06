@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Learnmixer_assignment</string>
+    <string name="welcome">WELCOME TO LEARNMIXER</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_collection_">Collection_Activity</string>
+    <string name="textView2">Some informatical text that contains some paragraphs about the
+                            lecture...</string>
+
+    <string name="history">HISTORY</string>
+    <string name="english">ENGLISH</string>
+    <string name="math">MATHEMATIC</string>
+
+
+
+
 </resources>
