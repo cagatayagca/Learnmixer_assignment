@@ -7,12 +7,14 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.VideoView;
 
 
 public class Math_Activity extends ActionBarActivity {
 
-    
+    Button start,pause;
 
 
     @Override
@@ -20,9 +22,25 @@ public class Math_Activity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_);
 
-        VideoView vv = (VideoView) findViewById(R.id.videoView);
+        final VideoView vv = (VideoView) findViewById(R.id.videoView);
+
+       start= (Button)findViewById(R.id.button);
+       pause= (Button)findViewById(R.id.button2);
+
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vv.start();
+            }
+        });
 
 
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vv.pause();
+            }
+        });
 
 
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video);
