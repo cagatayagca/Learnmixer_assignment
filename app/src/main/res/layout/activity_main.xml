@@ -28,35 +28,38 @@
         android:typeface="sans" />
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="fill_parent"
+        android:layout_height="559dp"
+        android:layout_weight="0.81">
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="182dp"
             android:text="@string/history"
             android:id="@+id/history_button"
-            android:layout_gravity="left|center_vertical"
-            android:onClick="go_to"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="go_to_history"
             android:typeface="sans" />
 
+        <Button
+            android:layout_width="352dp"
+            android:layout_height="181dp"
+            android:text="@string/english"
+            android:id="@+id/english_button"
+            android:layout_gravity="center_horizontal|bottom"
+            android:typeface="sans" />
+
+        <Button
+            android:layout_width="349dp"
+            android:layout_height="182dp"
+            android:text="@string/math"
+            android:id="@+id/math_button"
+            android:layout_weight="3.53"
+            android:typeface="sans"
+            android:onClick="go_to_math"
+            android:layout_gravity="center" />
+
     </FrameLayout>
-
-    <Button
-        android:layout_width="352dp"
-        android:layout_height="141dp"
-        android:text="@string/english"
-        android:id="@+id/english_button"
-        android:layout_gravity="center_horizontal"
-        android:typeface="sans" />
-
-    <Button
-        android:layout_width="349dp"
-        android:layout_height="wrap_content"
-        android:text="@string/math"
-        android:id="@+id/math_button"
-        android:layout_weight="3.53"
-        android:typeface="sans" />
 
 </LinearLayout>
 

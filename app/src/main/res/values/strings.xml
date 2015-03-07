@@ -4,12 +4,20 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_collection_">Collection_Activity</string>
-    <string name="textView2">Some informatical text that contains some paragraphs about the
-                            lecture...</string>
+    <string name="textView2">The Battle of Sakarya (Turkish: Sakarya Meydan Muharebesi), also known as the Battle of the Sangarios (Greek: Μάχη του Σαγγάριου), was an important engagement in the Greco-Turkish War (1919–1922) and Turkish War of Independence.
+
+The battle went on for 21 days from August 23 to September 13, 1921, close to the banks of the Sakarya River in the immediate vicinity of Polatlı, which is today a district of the Ankara Province. The battle line stretched over 62 miles (100 km).
+
+It is also known as the "Officers’ Battle"(Subaylar Savaşı) in Turkey because of the unusually high casualty rate (70-80%) among the officers.
+
+The Battle of Sakarya is considered as the turning point of the Turkish War of Independence. A Turkish observer, writer and literary critic İsmail Habip Sevük, later described the importance of the battle with the words, "the retreat that started in Vienna on 13 September 1683 stopped 238 years later".</string>
 
     <string name="history">HISTORY</string>
     <string name="english">ENGLISH</string>
     <string name="math">MATHEMATIC</string>
+    <string name="title_activity_math_">Math_Activity</string>
+
+    <string name="hello_world">Hello world!</string>
 
 
 

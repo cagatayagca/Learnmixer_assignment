@@ -1,28 +1,40 @@
 package com.example.acar.learnmixer_assignment;
 
-import android.content.Intent;
+import android.media.session.MediaController;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.VideoView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class Math_Activity extends ActionBarActivity {
 
+    
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_math_);
+
+        VideoView vv = (VideoView) findViewById(R.id.videoView);
+
+
+
+
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video);
+        vv.setVideoURI(uri);
+        vv.start();
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_math_, menu);
         return true;
     }
 
@@ -39,21 +51,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void go_to_history(View view){
-
-        Intent intent;
-        intent = new Intent(this, Collection_Activity.class);
-        startActivity(intent);
-
-    }
-
-    public void go_to_math(View view){
-
-        Intent intent;
-        intent =new Intent(this,Math_Activity.class);
-        startActivity(intent);
-
     }
 }
