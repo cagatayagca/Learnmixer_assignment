@@ -36,31 +36,10 @@
         android:layout_gravity="center_horizontal">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="349dp"
+            android:layout_width="218dp"
+            android:layout_height="215dp"
             android:id="@+id/imageView"
-            android:layout_gravity="left|top" />
-
-        <VideoView
-            android:layout_width="183dp"
-            android:layout_height="161dp"
-            android:id="@+id/videoView"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_weight="0.08" />
-
-        <Button
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:text="START"
-            android:id="@+id/start_btn"
-            android:layout_gravity="right|bottom" />
-
-        <Button
-            android:layout_width="68dp"
-            android:layout_height="wrap_content"
-            android:text="STOP"
-            android:id="@+id/stop_btn"
-            android:layout_gravity="left|bottom" />
+            android:layout_gravity="center_horizontal|top" />
 
     </FrameLayout>
 

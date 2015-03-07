@@ -10,18 +10,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.VideoView;
+
+import java.security.MessageDigest;
 
 
 public class Collection_Activity extends ActionBarActivity {
 
-    public ImageView imageview;
+    private ImageView imageview;
     private Drawable drawable;
 
-    VideoView vv;
 
-    Button btn;
-    Button stp_btn;
+
 
 
     @Override
@@ -29,34 +30,11 @@ public class Collection_Activity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection_);
 
-        imageview.setImageDrawable(drawable);
-            drawable =  getResources().getDrawable(R.drawable.greeks);
 
         imageview=(ImageView) findViewById(R.id.imageView);
+        drawable =  getResources().getDrawable(R.drawable.greeks);
 
-        btn = (Button)findViewById(R.id.start_btn);
-        stp_btn =(Button)findViewById(R.id.stop_btn);
-        vv=(VideoView)findViewById(R.id.videoView);
-        Uri uri= Uri.parse("android.resource://"+getPackageName()+"+/"+R.raw.video);
-        vv.setVideoURI(uri);
-
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vv.start();
-            }
-        });
-
-        stp_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vv.pause();
-            }
-        });
-
-
-
+        imageview.setImageDrawable(drawable);
     }
 
 
